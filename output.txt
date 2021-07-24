@@ -1,0 +1,463 @@
+Script started on 2021-07-24 02:13:20-04:00
+]777;notify;Command completed;script >> output.txt ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman version
+Version:            1.6.4
+RemoteAPI Version:  1
+Go Version:         go1.13.4
+OS/Arch:            linux/amd64
+]777;notify;Command completed;podman version]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                        TAG      IMAGE ID       CREATED       SIZE
+registry.access.redhat.com/rhel   latest   538460c14d75   10 days ago   216 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run i[Kubi8/ubi:8.3 echo 'Hello World!'
+Trying to pull registry.access.redhat.com/ubi8/ubi:8.3...
+Getting image source signatures
+Copying blob 4b21dcdd136d [>-------------------------------------] 1.5MiB / 72.1MiB
+Copying blob 55eda7743468 [======================================] 1.8KiB / 1.8KiB
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=>------------------------------------] 3.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===>----------------------------------] 6.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [====>---------------------------------] 9.5MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=====>--------------------------------] 11.4MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [======>-------------------------------] 13.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [========>-----------------------------] 16.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=========>----------------------------] 19.2MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===========>--------------------------] 21.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [============>-------------------------] 24.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [==============>-----------------------] 27.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===============>----------------------] 30.2MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [================>---------------------] 32.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [==================>-------------------] 35.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===================>------------------] 38.5MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=====================>----------------] 41.0MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [======================>---------------] 43.6MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=======================>--------------] 45.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=========================>------------] 48.5MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [==========================>-----------] 51.2MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===========================>----------] 53.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=============================>--------] 57.1MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===============================>------] 59.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [================================>-----] 62.3MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=================================>----] 65.1MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===================================>--] 67.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [====================================>-] 70.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [======================================] 72.1MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d done
+Copying blob 55eda7743468 done
+Copying config 613e5da7a9 [======================================] 4.3KiB / 4.3KiB
+[1A[2KCopying config 613e5da7a9 done
+Writing manifest to image destination
+Storing signatures
+Hello World!
+]777;notify;Command completed;podman run ubi8/ubi:8.3 echo 'Hello World!']0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE  COMMAND  CREATED  STATUS  PORTS  NAMES
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run ubi8/ubi:8.3 echo 'Welcom..'
+Welcom..
+]777;notify;Command completed;podman run ubi8/ubi:8.3 echo 'Welcom..']0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE  COMMAND  CREATED  STATUS  PORTS  NAMES
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -p 8080 registry.reh[Kdhat.io/rhel18/httpd-21[K4
+Trying to pull registry.redhat.io/rhel18/httpd-24...
+  unable to retrieve auth token: invalid username/password: unauthorized: Please login to the Red Hat Registry using your Customer Portal credentials. Further instructions can be found here: https://access.redhat.com/RegistryAuthentication
+Error: unable to pull registry.redhat.io/rhel18/httpd-24: unable to pull image: Error initializing source docker://registry.redhat.io/rhel18/httpd-24:latest: unable to retrieve auth token: invalid username/password: unauthorized: Please login to the Red Hat Registry using your Customer Portal credentials. Further instructions can be found here: https://access.redhat.com/RegistryAuthentication
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman login registry.redhat.io
+Username: hukum.jain
+Password: 
+Login Succeeded!
+]777;notify;Command completed;podman login registry.redhat.io]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman -d [K[K[Krun -d -p 8080 registry.redhat.io/rhel18/httpd-24
+Trying to pull registry.redhat.io/rhel18/httpd-24...
+  unknown: Not Found
+Error: unable to pull registry.redhat.io/rhel18/httpd-24: unable to pull image: Error initializing source docker://registry.redhat.io/rhel18/httpd-24:latest: Error reading manifest latest in registry.redhat.io/rhel18/httpd-24: unknown: Not Found
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ it is not rhel18 but rhel[1@c[1@a[1@t[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C8 - that was the issue with above command
+cat: it: No such file or directory
+cat: is: No such file or directory
+cat: not: No such file or directory
+cat: rhel18: No such file or directory
+cat: but: No such file or directory
+cat: rhel8: No such file or directory
+
+
+
+
+
+
+^C
+]777;notify;Command completed;cat it is not rhel18 but rhel8 - that was the issue with above command]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ cat it is not rhel18 but rhel8 - that was the issue with above command[1@e[C[1@c[1@h[1@o[1@ [1P[1P[1P[1P[1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+it is not rhel18 but rhel8 - that was the issue with above command
+]777;notify;Command completed;echo "it is not rhel18 but rhel8 - that was the issue with above command"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;echo "it is not rhel18 but rhel8 - that was the issue with above command"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;echo "it is not rhel18 but rhel8 - that was the issue with above command"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -o[Kp 8080 registry.r[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksearch registry.redhat.io/httpd-24
+INDEX       NAME                                      DESCRIPTION                                       STARS   OFFICIAL   AUTOMATED
+redhat.io   registry.redhat.io/rhel8/httpd-24         Apache HTTP Server 2.4 available as containe...   0                  
+redhat.io   registry.redhat.io/rhscl/httpd-24-rhel7   Apache HTTP 2.4 Server                            0                  
+redhat.io   registry.redhat.io/ubi8/httpd-24          Platform for running Apache httpd 2.4 or bui...   0                  
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d p[K-p 8080 ^C
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman search registry.redhat.io/httpd-24[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpodman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+Trying to pull registry.redhat.io/rhel8/httpd-24...
+Getting image source signatures
+Copying blob e4ea731ca441 [======>-------------------------------] 2.8MiB / 16.2MiB
+Copying blob 5f6bf015319e [=>------------------------------------] 3.4MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===>----------------------------------] 6.1MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 [======================================] 1.7KiB / 1.7KiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [==========>---------------------------] 4.6MiB / 16.2MiB
+Copying blob 5f6bf015319e [==>-----------------------------------] 5.6MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [====>---------------------------------] 8.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [=============>------------------------] 6.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [===>----------------------------------] 9.4MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [======>-------------------------------] 10.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [====================>-----------------] 9.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [=====>--------------------------------] 13.1MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=======>------------------------------] 12.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [======================>---------------] 9.9MiB / 16.2MiB
+Copying blob 5f6bf015319e [=======>------------------------------] 16.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [========>-----------------------------] 14.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [========================>-------------] 10.6MiB / 16.2MiB
+Copying blob 5f6bf015319e [========>-----------------------------] 17.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=========>----------------------------] 15.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [===========================>----------] 11.9MiB / 16.2MiB
+Copying blob 5f6bf015319e [==========>---------------------------] 22.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [==========>---------------------------] 17.9MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [==============================>-------] 13.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [===========>--------------------------] 25.2MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===========>--------------------------] 19.3MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [===============================>------] 13.5MiB / 16.2MiB
+Copying blob 5f6bf015319e [============>-------------------------] 26.2MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===========>--------------------------] 19.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [===================================>--] 15.4MiB / 16.2MiB
+Copying blob 5f6bf015319e [=============>------------------------] 29.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [============>-------------------------] 21.3MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [======================================] 16.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [==============>-----------------------] 31.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=============>------------------------] 22.3MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [======================================] 16.2MiB / 16.2MiB
+Copying blob 5f6bf015319e [=================>--------------------] 37.3MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [================>---------------------] 27.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==================>-------------------] 40.8MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===================>------------------] 31.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [===================>------------------] 42.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [====================>-----------------] 33.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [=====================>----------------] 46.7MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=======================>--------------] 38.1MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [=======================>--------------] 49.8MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=========================>------------] 41.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [========================>-------------] 53.2MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===========================>----------] 44.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==========================>-----------] 57.3MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=============================>--------] 48.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [============================>---------] 60.3MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [==============================>-------] 50.6MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [=============================>--------] 62.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===============================>------] 52.0MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==============================>-------] 65.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=================================>----] 54.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [================================>-----] 69.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===================================>--] 57.8MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==================================>---] 73.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [======================================] 61.0MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [===================================>--] 75.8MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [======================================] 61.1MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [======================================] 78.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 done
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [======================================] 79.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 done
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e done
+Copying blob 07fe97aaf4e8 done
+Copying blob 45cc8b7f2b43 done
+Copying config e41fcc5f3b [======================================] 7.6KiB / 7.6KiB
+[1A[2KCopying config e41fcc5f3b done
+Writing manifest to image destination
+Storing signatures
+a05f402951e1d69a81ac9815169385ef4c985b3350e5cec2c07ea370fc3ad0c0
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                     COMMAND               CREATED         STATUS             PORTS                    NAMES
+a05f402951e1  registry.redhat.io/rhel8/httpd-24:latest  /usr/bin/run-http...  14 seconds ago  Up 14 seconds ago  0.0.0.0:39243->8080/tcp  compassionate_kilby
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman port -l
+8080/tcp -> 0.0.0.0:39243
+]777;notify;Command completed;podman port -l]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman port -l]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman port -l]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ curl http://0.0.0.0:39243
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Test Page for the HTTP Server on Red Hat Enterprise Linux</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type="text/css">
+			/*<![CDATA[*/
+			body {
+				background-color: #fff;
+				color: #000;
+				font-size: 0.9em;
+				font-family: sans-serif,helvetica;
+				margin: 0;
+				padding: 0;
+			}
+			:link {
+				color: #c00;
+			}
+			:visited {
+				color: #c00;
+			}
+			a:hover {
+				color: #f50;
+			}
+			h1 {
+				text-align: center;
+				margin: 0;
+				padding: 0.6em 2em 0.4em;
+				background-color: #900;
+				color: #fff;
+				font-weight: normal;
+				font-size: 1.75em;
+				border-bottom: 2px solid #000;
+			}
+			h1 strong {
+				font-weight: bold;
+			}
+			h2 {
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+			hr {
+				display: none;
+			}
+			.content {
+				padding: 1em 5em;
+			}
+			.content-columns {
+				/* Setting relative positioning allows for 
+				absolute positioning for sub-classes */
+				position: relative;
+				padding-top: 1em;
+			}
+			.content-column-left {
+				/* Value for IE/Win; will be overwritten for other browsers */
+				width: 47%;
+				padding-right: 3%;
+				float: left;
+				padding-bottom: 2em;
+			}
+			.content-column-left hr {
+				display: none;
+			}
+			.content-column-right {
+				/* Values for IE/Win; will be overwritten for other browsers */
+				width: 47%;
+				padding-left: 3%;
+				float: left;
+				padding-bottom: 2em;
+			}
+			.content-columns>.content-column-left, .content-columns>.content-column-right {
+				/* Non-IE/Win */
+			}
+			.logos {
+				text-align: center;
+				margin-top: 2em;
+			}
+			img {
+				border: 2px solid #fff;
+				padding: 2px;
+				margin: 2px;
+			}
+			a:hover img {
+				border: 2px solid #f50;
+			}
+			/*]]>*/
+		</style>
+	</head>
+
+	<body>
+		<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>
+
+		<div class="content">
+			<div class="content-middle">
+				<p>This page is used to test the proper operation of the HTTP server after it has been installed. If you can read this page, it means that the HTTP server installed at this site is working properly.</p>
+			</div>
+			<hr />
+
+			<div class="content-columns">
+				<div class="content-column-left">
+					<h2>If you are a member of the general public:</h2>
+
+					<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>
+
+					<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name "webmaster" and directed to the website's domain should reach the appropriate person.</p>
+
+					<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to "webmaster@example.com".</p>
+
+					<p>For information on Red Hat Enterprise Linux, please visit the <a href="http://www.redhat.com/">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href="http://www.redhat.com/docs/manuals/enterprise/">available on the Red Hat, Inc. website</a>.</p>
+					<hr />
+				</div>
+
+				<div class="content-column-right">
+					<h2>If you are the website administrator:</h2>
+
+					<p>You may now add content to the webroot directory. Note
+					that until you do so, people visiting your website will see
+					this page, and not your content.</p>
+
+					<p>For systems using the Apache HTTP Server:
+					You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>
+
+					<p>For systems using NGINX:
+					You should now put your content in a location of your
+					choice and edit the <code>root</code> configuration directive
+					in the <strong>nginx</strong> configuration file
+					<code>/etc/nginx/nginx.conf</code>.</p>
+
+					<div class="logos">
+						<a href="https://access.redhat.com/products/red-hat-enterprise-linux"><img src= "/icons/poweredby.png" alt="[ Powered by Red Hat Enterprise Linux ]" /></a>
+						<img src= "poweredby.png" alt="[ Powered by Red Hat Enterprise Linux ]" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images --format ""{"{"}"}"I}}"M}}"A}}"G}}"E}}" }}"I}}"D}}"
+Error: Template parsing error: template: image:1: function "IMAGE" not defined
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                     COMMAND               CREATED             STATUS                 PORTS                    NAMES
+a05f402951e1  registry.redhat.io/rhel8/httpd-24:latest  /usr/bin/run-http...  About a minute ago  Up About a minute ago  0.0.0.0:39243->8080/tcp  compassionate_kilby
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ PODMAN [K[K[K[K[K[K[KPODMAN [K[K[K[K[K[K[Kpodman ps --format ""{"{"}"}"I}"D}"[C}"[1PID}}"[C[C[C[C[1P"{{ID}}"="{{ID}}"[C[C[C[C.ID}}"[C[C[C[C{"{"}"}".}}"N}}"a}}"m}}"e}}"s}}"[C[C{"{"}"}".}}"S}}"t}}"a}}"t}}"u}}"s}}"
+a05f402951e1compassionate_kilbyUp 3 minutes ago
+]777;notify;Command completed;podman ps --format="{{.ID}}{{.Names}}{{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps --format="{{.ID}}{{.Names}}{{.Status}}"[C[C {{.Names}}{{.Status}}" {{.Names}}{{.Status}}"[C[C[C[C[C[C[C[C[C[C {{.Status}}" {{.Status}}"
+a05f402951e1  compassionate_kilby  Up 4 minutes ago
+]777;notify;Command completed;podman ps --format="{{.ID}}  {{.Names}}  {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format="{{.ID}}  {{.Names}}  {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format="{{.ID}}  {{.Names}}  {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -it ubi8/ubi:8.3 /bin/bash
+]0;@7f71efd51d69:/[root@7f71efd51d69 /]# whoami
+root
+]0;@7f71efd51d69:/[root@7f71efd51d69 /]# exit
+exit
+]777;notify;Command completed;podman run -it ubi8/ubi:8.3 /bin/bash]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                     COMMAND               CREATED        STATUS            PORTS                    NAMES
+a05f402951e1  registry.redhat.io/rhel8/httpd-24:latest  /usr/bin/run-http...  7 minutes ago  Up 7 minutes ago  0.0.0.0:39243->8080/tcp  compassionate_kilby
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run ^C
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run 613e5da7a934 [1@-[1P[C[1@ [1P[C[C[C[C[C[C[C[C[C[C[C[C[1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P - e [C G R E E T [C [K= H e l l o [C - e [C M E S S A G E = H u k u m [C u b m [1P i 8 / u b i : 8 3 [1P . 3 [C p r i n t e n v [C G R E E T [C M E S S A G E 
+Hello
+Hukum
+]777;notify;Command completed;podman run -e GREET=Hello -e MESSAGE=Hukum ubi8/ubi:8.3 printenv GREET MESSAGE ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -e GREET=Hi Name[K[K[K[K-e NAME=NAveen ubi8/ubi:8.3 print[K[K[K[K[Kecho $GREET $Na[KAME
+
+]777;notify;Command completed;podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo $GREET $NAME]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo $GREET $NAME[C[1P[C[C[C[C[C[C[C[1PNAME
+GREET NAME
+]777;notify;Command completed;podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo GREET NAME]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo GREET NAME[1P[1P[1P[1P[1@p[1@r[1@i[1@n[1@t[1@e[1@n[1@v
+Hi
+NAveen
+]777;notify;Command completed;podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 printenv GREET NAME]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ echo ""I"n"i"t"i"a"t"i"n"g" "G"u"i"d"e"d" "E"x"c"e"r"[1P"[1P"[1P"e"r"x"i"c"[1P"[1P"[1P"[1P"r"c"i"s"e" "P"a"g"e" "3"8"
+Initiating Guided Exercise Page 38
+]777;notify;Command completed;echo "Initiating Guided Exercise Page 38"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;echo "Initiating Guided Exercise Page 38"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ pofma[K[K[Kdman sarch [K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2021-07-24 02:47:45-04:00

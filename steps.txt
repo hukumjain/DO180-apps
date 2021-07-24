@@ -1,2 +1,46 @@
 cd /home/student/DO180-apps
 
+[student@workstation DO180-apps]$ sudo podman version
+Version:            1.6.4
+RemoteAPI Version:  1
+Go Version:         go1.13.4
+OS/Arch:            linux/amd64
+
+
+[student@workstation DO180-apps]$ sudo podman search rhel
+INDEX        NAME                                                                     DESCRIPTION                                       STARS   OFFICIAL   AUTOMATED
+redhat.com   registry.access.redhat.com/rhel7/rhel-atomic                             Red Hat Enterprise Linux Atomic Image is a m...   0                  
+redhat.com   registry.access.redhat.com/rhel-atomic                                   Red Hat Enterprise Linux Atomic Image is a m...   0                  
+redhat.com   registry.access.redhat.com/rhel7-atomic                                  Red Hat Enterprise Linux Atomic Image is a m...   0                  
+redhat.com   registry.access.redhat.com/dotnet/dotnet-20-rhel7                        .NET Core 2.0 for RHEL                            0        
+
+
+[student@workstation DO180-apps]$ sudo podman images
+REPOSITORY   TAG   IMAGE ID   CREATED   SIZE
+
+[student@workstation DO180-apps]$ sudo podman pull rhel
+Trying to pull registry.access.redhat.com/rhel...
+Getting image source signatures
+Copying blob 8e663e919f6c done
+Copying blob 1e6175de2c95 done
+Copying config 9a3387c8f6 done
+Writing manifest to image destination
+Storing signatures
+9a3387c8f6bc9b63b119dc61ddbaed6bb20795a7b187908ca1b5ecabc5c19aac
+[student@workstation DO180-apps]$ 
+
+[student@workstation DO180-apps]$ sudo podman images
+REPOSITORY                        TAG      IMAGE ID       CREATED       SIZE
+registry.access.redhat.com/rhel   latest   9a3387c8f6bc   7 weeks ago   216 MB
+[student@workstation DO180-apps]$ 
+
+
+
+
+
+
+
+
+
+
+
