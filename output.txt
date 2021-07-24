@@ -1,0 +1,1472 @@
+Script started on 2021-07-24 02:13:20-04:00
+]777;notify;Command completed;script >> output.txt ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman version
+Version:            1.6.4
+RemoteAPI Version:  1
+Go Version:         go1.13.4
+OS/Arch:            linux/amd64
+]777;notify;Command completed;podman version]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                        TAG      IMAGE ID       CREATED       SIZE
+registry.access.redhat.com/rhel   latest   538460c14d75   10 days ago   216 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run i[Kubi8/ubi:8.3 echo 'Hello World!'
+Trying to pull registry.access.redhat.com/ubi8/ubi:8.3...
+Getting image source signatures
+Copying blob 4b21dcdd136d [>-------------------------------------] 1.5MiB / 72.1MiB
+Copying blob 55eda7743468 [======================================] 1.8KiB / 1.8KiB
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=>------------------------------------] 3.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===>----------------------------------] 6.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [====>---------------------------------] 9.5MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=====>--------------------------------] 11.4MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [======>-------------------------------] 13.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [========>-----------------------------] 16.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=========>----------------------------] 19.2MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===========>--------------------------] 21.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [============>-------------------------] 24.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [==============>-----------------------] 27.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===============>----------------------] 30.2MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [================>---------------------] 32.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [==================>-------------------] 35.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===================>------------------] 38.5MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=====================>----------------] 41.0MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [======================>---------------] 43.6MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=======================>--------------] 45.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=========================>------------] 48.5MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [==========================>-----------] 51.2MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===========================>----------] 53.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=============================>--------] 57.1MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===============================>------] 59.8MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [================================>-----] 62.3MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [=================================>----] 65.1MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [===================================>--] 67.9MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [====================================>-] 70.7MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d [======================================] 72.1MiB / 72.1MiB
+Copying blob 55eda7743468 done
+[1A[2K[1A[2KCopying blob 4b21dcdd136d done
+Copying blob 55eda7743468 done
+Copying config 613e5da7a9 [======================================] 4.3KiB / 4.3KiB
+[1A[2KCopying config 613e5da7a9 done
+Writing manifest to image destination
+Storing signatures
+Hello World!
+]777;notify;Command completed;podman run ubi8/ubi:8.3 echo 'Hello World!']0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE  COMMAND  CREATED  STATUS  PORTS  NAMES
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run ubi8/ubi:8.3 echo 'Welcom..'
+Welcom..
+]777;notify;Command completed;podman run ubi8/ubi:8.3 echo 'Welcom..']0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE  COMMAND  CREATED  STATUS  PORTS  NAMES
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -p 8080 registry.reh[Kdhat.io/rhel18/httpd-21[K4
+Trying to pull registry.redhat.io/rhel18/httpd-24...
+  unable to retrieve auth token: invalid username/password: unauthorized: Please login to the Red Hat Registry using your Customer Portal credentials. Further instructions can be found here: https://access.redhat.com/RegistryAuthentication
+Error: unable to pull registry.redhat.io/rhel18/httpd-24: unable to pull image: Error initializing source docker://registry.redhat.io/rhel18/httpd-24:latest: unable to retrieve auth token: invalid username/password: unauthorized: Please login to the Red Hat Registry using your Customer Portal credentials. Further instructions can be found here: https://access.redhat.com/RegistryAuthentication
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman login registry.redhat.io
+Username: hukum.jain
+Password: 
+Login Succeeded!
+]777;notify;Command completed;podman login registry.redhat.io]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman -d [K[K[Krun -d -p 8080 registry.redhat.io/rhel18/httpd-24
+Trying to pull registry.redhat.io/rhel18/httpd-24...
+  unknown: Not Found
+Error: unable to pull registry.redhat.io/rhel18/httpd-24: unable to pull image: Error initializing source docker://registry.redhat.io/rhel18/httpd-24:latest: Error reading manifest latest in registry.redhat.io/rhel18/httpd-24: unknown: Not Found
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel18/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ it is not rhel18 but rhel[1@c[1@a[1@t[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C8 - that was the issue with above command
+cat: it: No such file or directory
+cat: is: No such file or directory
+cat: not: No such file or directory
+cat: rhel18: No such file or directory
+cat: but: No such file or directory
+cat: rhel8: No such file or directory
+
+
+
+
+
+
+^C
+]777;notify;Command completed;cat it is not rhel18 but rhel8 - that was the issue with above command]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ cat it is not rhel18 but rhel8 - that was the issue with above command[1@e[C[1@c[1@h[1@o[1@ [1P[1P[1P[1P[1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+it is not rhel18 but rhel8 - that was the issue with above command
+]777;notify;Command completed;echo "it is not rhel18 but rhel8 - that was the issue with above command"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;echo "it is not rhel18 but rhel8 - that was the issue with above command"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;echo "it is not rhel18 but rhel8 - that was the issue with above command"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -o[Kp 8080 registry.r[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksearch registry.redhat.io/httpd-24
+INDEX       NAME                                      DESCRIPTION                                       STARS   OFFICIAL   AUTOMATED
+redhat.io   registry.redhat.io/rhel8/httpd-24         Apache HTTP Server 2.4 available as containe...   0                  
+redhat.io   registry.redhat.io/rhscl/httpd-24-rhel7   Apache HTTP 2.4 Server                            0                  
+redhat.io   registry.redhat.io/ubi8/httpd-24          Platform for running Apache httpd 2.4 or bui...   0                  
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d p[K-p 8080 ^C
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman search registry.redhat.io/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman search registry.redhat.io/httpd-24[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpodman run -d -p 8080 registry.redhat.io/rhel8/httpd-24
+Trying to pull registry.redhat.io/rhel8/httpd-24...
+Getting image source signatures
+Copying blob e4ea731ca441 [======>-------------------------------] 2.8MiB / 16.2MiB
+Copying blob 5f6bf015319e [=>------------------------------------] 3.4MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===>----------------------------------] 6.1MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 [======================================] 1.7KiB / 1.7KiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [==========>---------------------------] 4.6MiB / 16.2MiB
+Copying blob 5f6bf015319e [==>-----------------------------------] 5.6MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [====>---------------------------------] 8.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [=============>------------------------] 6.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [===>----------------------------------] 9.4MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [======>-------------------------------] 10.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [====================>-----------------] 9.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [=====>--------------------------------] 13.1MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=======>------------------------------] 12.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [======================>---------------] 9.9MiB / 16.2MiB
+Copying blob 5f6bf015319e [=======>------------------------------] 16.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [========>-----------------------------] 14.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [========================>-------------] 10.6MiB / 16.2MiB
+Copying blob 5f6bf015319e [========>-----------------------------] 17.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=========>----------------------------] 15.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [===========================>----------] 11.9MiB / 16.2MiB
+Copying blob 5f6bf015319e [==========>---------------------------] 22.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [==========>---------------------------] 17.9MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [==============================>-------] 13.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [===========>--------------------------] 25.2MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===========>--------------------------] 19.3MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [===============================>------] 13.5MiB / 16.2MiB
+Copying blob 5f6bf015319e [============>-------------------------] 26.2MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===========>--------------------------] 19.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [===================================>--] 15.4MiB / 16.2MiB
+Copying blob 5f6bf015319e [=============>------------------------] 29.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [============>-------------------------] 21.3MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [======================================] 16.1MiB / 16.2MiB
+Copying blob 5f6bf015319e [==============>-----------------------] 31.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=============>------------------------] 22.3MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 [======================================] 16.2MiB / 16.2MiB
+Copying blob 5f6bf015319e [=================>--------------------] 37.3MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [================>---------------------] 27.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==================>-------------------] 40.8MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===================>------------------] 31.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [===================>------------------] 42.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [====================>-----------------] 33.5MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [=====================>----------------] 46.7MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=======================>--------------] 38.1MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [=======================>--------------] 49.8MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=========================>------------] 41.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [========================>-------------] 53.2MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===========================>----------] 44.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==========================>-----------] 57.3MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=============================>--------] 48.2MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [============================>---------] 60.3MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [==============================>-------] 50.6MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [=============================>--------] 62.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===============================>------] 52.0MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==============================>-------] 65.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [=================================>----] 54.7MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [================================>-----] 69.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [===================================>--] 57.8MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [==================================>---] 73.0MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [======================================] 61.0MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [===================================>--] 75.8MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 [======================================] 61.1MiB / 61.1MiB
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [======================================] 78.9MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 done
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e [======================================] 79.5MiB / 79.5MiB
+Copying blob 07fe97aaf4e8 done
+Copying blob 45cc8b7f2b43 done
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob e4ea731ca441 done
+Copying blob 5f6bf015319e done
+Copying blob 07fe97aaf4e8 done
+Copying blob 45cc8b7f2b43 done
+Copying config e41fcc5f3b [======================================] 7.6KiB / 7.6KiB
+[1A[2KCopying config e41fcc5f3b done
+Writing manifest to image destination
+Storing signatures
+a05f402951e1d69a81ac9815169385ef4c985b3350e5cec2c07ea370fc3ad0c0
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run -d -p 8080 registry.redhat.io/rhel8/httpd-24]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                     COMMAND               CREATED         STATUS             PORTS                    NAMES
+a05f402951e1  registry.redhat.io/rhel8/httpd-24:latest  /usr/bin/run-http...  14 seconds ago  Up 14 seconds ago  0.0.0.0:39243->8080/tcp  compassionate_kilby
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman port -l
+8080/tcp -> 0.0.0.0:39243
+]777;notify;Command completed;podman port -l]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman port -l]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman port -l]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ curl http://0.0.0.0:39243
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Test Page for the HTTP Server on Red Hat Enterprise Linux</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type="text/css">
+			/*<![CDATA[*/
+			body {
+				background-color: #fff;
+				color: #000;
+				font-size: 0.9em;
+				font-family: sans-serif,helvetica;
+				margin: 0;
+				padding: 0;
+			}
+			:link {
+				color: #c00;
+			}
+			:visited {
+				color: #c00;
+			}
+			a:hover {
+				color: #f50;
+			}
+			h1 {
+				text-align: center;
+				margin: 0;
+				padding: 0.6em 2em 0.4em;
+				background-color: #900;
+				color: #fff;
+				font-weight: normal;
+				font-size: 1.75em;
+				border-bottom: 2px solid #000;
+			}
+			h1 strong {
+				font-weight: bold;
+			}
+			h2 {
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+			hr {
+				display: none;
+			}
+			.content {
+				padding: 1em 5em;
+			}
+			.content-columns {
+				/* Setting relative positioning allows for 
+				absolute positioning for sub-classes */
+				position: relative;
+				padding-top: 1em;
+			}
+			.content-column-left {
+				/* Value for IE/Win; will be overwritten for other browsers */
+				width: 47%;
+				padding-right: 3%;
+				float: left;
+				padding-bottom: 2em;
+			}
+			.content-column-left hr {
+				display: none;
+			}
+			.content-column-right {
+				/* Values for IE/Win; will be overwritten for other browsers */
+				width: 47%;
+				padding-left: 3%;
+				float: left;
+				padding-bottom: 2em;
+			}
+			.content-columns>.content-column-left, .content-columns>.content-column-right {
+				/* Non-IE/Win */
+			}
+			.logos {
+				text-align: center;
+				margin-top: 2em;
+			}
+			img {
+				border: 2px solid #fff;
+				padding: 2px;
+				margin: 2px;
+			}
+			a:hover img {
+				border: 2px solid #f50;
+			}
+			/*]]>*/
+		</style>
+	</head>
+
+	<body>
+		<h1>Red Hat Enterprise Linux <strong>Test Page</strong></h1>
+
+		<div class="content">
+			<div class="content-middle">
+				<p>This page is used to test the proper operation of the HTTP server after it has been installed. If you can read this page, it means that the HTTP server installed at this site is working properly.</p>
+			</div>
+			<hr />
+
+			<div class="content-columns">
+				<div class="content-column-left">
+					<h2>If you are a member of the general public:</h2>
+
+					<p>The fact that you are seeing this page indicates that the website you just visited is either experiencing problems, or is undergoing routine maintenance.</p>
+
+					<p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name "webmaster" and directed to the website's domain should reach the appropriate person.</p>
+
+					<p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to "webmaster@example.com".</p>
+
+					<p>For information on Red Hat Enterprise Linux, please visit the <a href="http://www.redhat.com/">Red Hat, Inc. website</a>. The documentation for Red Hat Enterprise Linux is <a href="http://www.redhat.com/docs/manuals/enterprise/">available on the Red Hat, Inc. website</a>.</p>
+					<hr />
+				</div>
+
+				<div class="content-column-right">
+					<h2>If you are the website administrator:</h2>
+
+					<p>You may now add content to the webroot directory. Note
+					that until you do so, people visiting your website will see
+					this page, and not your content.</p>
+
+					<p>For systems using the Apache HTTP Server:
+					You may now add content to the directory <tt>/var/www/html/</tt>. Note that until you do so, people visiting your website will see this page, and not your content. To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>
+
+					<p>For systems using NGINX:
+					You should now put your content in a location of your
+					choice and edit the <code>root</code> configuration directive
+					in the <strong>nginx</strong> configuration file
+					<code>/etc/nginx/nginx.conf</code>.</p>
+
+					<div class="logos">
+						<a href="https://access.redhat.com/products/red-hat-enterprise-linux"><img src= "/icons/poweredby.png" alt="[ Powered by Red Hat Enterprise Linux ]" /></a>
+						<img src= "poweredby.png" alt="[ Powered by Red Hat Enterprise Linux ]" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;curl http://0.0.0.0:39243]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images --format ""{"{"}"}"I}}"M}}"A}}"G}}"E}}" }}"I}}"D}}"
+Error: Template parsing error: template: image:1: function "IMAGE" not defined
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images --format "{{IMAGE ID}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                     COMMAND               CREATED             STATUS                 PORTS                    NAMES
+a05f402951e1  registry.redhat.io/rhel8/httpd-24:latest  /usr/bin/run-http...  About a minute ago  Up About a minute ago  0.0.0.0:39243->8080/tcp  compassionate_kilby
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ PODMAN [K[K[K[K[K[K[KPODMAN [K[K[K[K[K[K[Kpodman ps --format ""{"{"}"}"I}"D}"[C}"[1PID}}"[C[C[C[C[1P"{{ID}}"="{{ID}}"[C[C[C[C.ID}}"[C[C[C[C{"{"}"}".}}"N}}"a}}"m}}"e}}"s}}"[C[C{"{"}"}".}}"S}}"t}}"a}}"t}}"u}}"s}}"
+a05f402951e1compassionate_kilbyUp 3 minutes ago
+]777;notify;Command completed;podman ps --format="{{.ID}}{{.Names}}{{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps --format="{{.ID}}{{.Names}}{{.Status}}"[C[C {{.Names}}{{.Status}}" {{.Names}}{{.Status}}"[C[C[C[C[C[C[C[C[C[C {{.Status}}" {{.Status}}"
+a05f402951e1  compassionate_kilby  Up 4 minutes ago
+]777;notify;Command completed;podman ps --format="{{.ID}}  {{.Names}}  {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format="{{.ID}}  {{.Names}}  {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format="{{.ID}}  {{.Names}}  {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -it ubi8/ubi:8.3 /bin/bash
+]0;@7f71efd51d69:/[root@7f71efd51d69 /]# whoami
+root
+]0;@7f71efd51d69:/[root@7f71efd51d69 /]# exit
+exit
+]777;notify;Command completed;podman run -it ubi8/ubi:8.3 /bin/bash]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                     COMMAND               CREATED        STATUS            PORTS                    NAMES
+a05f402951e1  registry.redhat.io/rhel8/httpd-24:latest  /usr/bin/run-http...  7 minutes ago  Up 7 minutes ago  0.0.0.0:39243->8080/tcp  compassionate_kilby
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run ^C
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run 613e5da7a934 [1@-[1P[C[1@ [1P[C[C[C[C[C[C[C[C[C[C[C[C[1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P - e [C G R E E T [C [K= H e l l o [C - e [C M E S S A G E = H u k u m [C u b m [1P i 8 / u b i : 8 3 [1P . 3 [C p r i n t e n v [C G R E E T [C M E S S A G E 
+Hello
+Hukum
+]777;notify;Command completed;podman run -e GREET=Hello -e MESSAGE=Hukum ubi8/ubi:8.3 printenv GREET MESSAGE ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -e GREET=Hi Name[K[K[K[K-e NAME=NAveen ubi8/ubi:8.3 print[K[K[K[K[Kecho $GREET $Na[KAME
+
+]777;notify;Command completed;podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo $GREET $NAME]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo $GREET $NAME[C[1P[C[C[C[C[C[C[C[1PNAME
+GREET NAME
+]777;notify;Command completed;podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo GREET NAME]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 echo GREET NAME[1P[1P[1P[1P[1@p[1@r[1@i[1@n[1@t[1@e[1@n[1@v
+Hi
+NAveen
+]777;notify;Command completed;podman run -e GREET=Hi -e NAME=NAveen ubi8/ubi:8.3 printenv GREET NAME]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ echo ""I"n"i"t"i"a"t"i"n"g" "G"u"i"d"e"d" "E"x"c"e"r"[1P"[1P"[1P"e"r"x"i"c"[1P"[1P"[1P"[1P"r"c"i"s"e" "P"a"g"e" "3"8"
+Initiating Guided Exercise Page 38
+]777;notify;Command completed;echo "Initiating Guided Exercise Page 38"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;echo "Initiating Guided Exercise Page 38"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ pofma[K[K[Kdman sarch [K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2021-07-24 02:47:45-04:00
+Script started on 2021-07-24 05:45:30-04:00
+]777;notify;Command completed;script output.txt]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-create start
+
+Setting up workstation for the Guided Exercise: Creating a MySQL database instance
+
+ · Checking podman configuration...............................  [1;36mSUCCESS[0;39m
+ · Creating create_table.txt file..............................  [1;36mSUCCESS[0;39m
+]777;notify;Command completed;lab container-create start]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ po[K[K
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run --name mysql-basic \
+> -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \
+> -e MYSQL_DATABASE [K=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \
+> -d regus[K[Kistry.redhat.io\rhel8\mysql-80:1
+Trying to pull registry.access.redhat.com/registry.redhat.iorhel8mysql-80:1...
+  name unknown: Repo not found
+Trying to pull quay.io/registry.redhat.iorhel8mysql-80:1...
+  error parsing HTTP 404 response body: invalid character '<' looking for beginning of value: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+Error: unable to pull registry.redhat.iorhel8mysql-80:1: 2 errors occurred:
+	* Error initializing source docker://registry.access.redhat.com/registry.redhat.iorhel8mysql-80:1: Error reading manifest 1 in registry.access.redhat.com/registry.redhat.iorhel8mysql-80: name unknown: Repo not found
+	* Error initializing source docker://quay.io/registry.redhat.iorhel8mysql-80:1: Error reading manifest 1 in quay.io/registry.redhat.iorhel8mysql-80: error parsing HTTP 404 response body: invalid character '<' looking for beginning of value: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+
+
+]777;notify;Command completed;podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman login registry.redhat.io
+Username: hukum.jain
+Password: 
+Login Succeeded!
+]777;notify;Command completed;podman login registry.redhat.io]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman login registry.redhat.iorun --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATAABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1
+Trying to pull registry.access.redhat.com/registry.redhat.iorhel8mysql-80:1...
+  name unknown: Repo not found
+Trying to pull quay.io/registry.redhat.iorhel8mysql-80:1...
+  error parsing HTTP 404 response body: invalid character '<' looking for beginning of value: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+Error: unable to pull registry.redhat.iorhel8mysql-80:1: 2 errors occurred:
+	* Error initializing source docker://registry.access.redhat.com/registry.redhat.iorhel8mysql-80:1: Error reading manifest 1 in registry.access.redhat.com/registry.redhat.iorhel8mysql-80: name unknown: Repo not found
+	* Error initializing source docker://quay.io/registry.redhat.iorhel8mysql-80:1: Error reading manifest 1 in quay.io/registry.redhat.iorhel8mysql-80: error parsing HTTP 404 response body: invalid character '<' looking for beginning of value: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+
+
+]777;notify;Command completed;podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATAABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1[K1
+Trying to pull registry.access.redhat.com/registry.redhat.iorhel8mysql-80:1...
+  name unknown: Repo not found
+Trying to pull quay.io/registry.redhat.iorhel8mysql-80:1...
+  error parsing HTTP 404 response body: invalid character '<' looking for beginning of value: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+Error: unable to pull registry.redhat.iorhel8mysql-80:1: 2 errors occurred:
+	* Error initializing source docker://registry.access.redhat.com/registry.redhat.iorhel8mysql-80:1: Error reading manifest 1 in registry.access.redhat.com/registry.redhat.iorhel8mysql-80: name unknown: Repo not found
+	* Error initializing source docker://quay.io/registry.redhat.iorhel8mysql-80:1: Error reading manifest 1 in quay.io/registry.redhat.iorhel8mysql-80: error parsing HTTP 404 response body: invalid character '<' looking for beginning of value: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+
+
+]777;notify;Command completed;podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATAABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogin registry.redhat.io[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATAABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpodman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATAABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io\rhel8\mysql-80:1p[K[1Prhel8\mysql-80:1/rhel8\mysql-80:1[C[C[C[C[C[C[1Pmysql-80:1/mysql-80:1
+Trying to pull registry.redhat.io/rhel8/mysql-80:1...
+Getting image source signatures
+Copying blob 5f6bf015319e [--------------------------------------] 0b / 0b
+Copying blob 45cc8b7f2b43 [--------------------------------------] 0b / 0b
+Copying blob e4ea731ca441 [--------------------------------------] 0b / 0b
+[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [--------------------------------------] 204.2KiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [>-------------------------------------] 3.4MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [==>-----------------------------------] 7.1MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===>----------------------------------] 10.0MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [====>---------------------------------] 13.7MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [=====>--------------------------------] 16.6MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [=======>------------------------------] 20.2MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [========>-----------------------------] 23.9MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [=========>----------------------------] 27.3MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===========>--------------------------] 30.9MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [============>-------------------------] 34.4MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [==============>-----------------------] 38.2MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===============>----------------------] 41.7MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [================>---------------------] 45.5MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [==================>-------------------] 48.8MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===================>------------------] 52.6MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [====================>-----------------] 55.8MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [======================>---------------] 59.3MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [=======================>--------------] 62.6MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [========================>-------------] 65.9MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [==========================>-----------] 69.5MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===========================>----------] 72.9MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [============================>---------] 76.4MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [=============================>--------] 79.6MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===============================>------] 83.2MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [================================>-----] 86.7MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [=================================>----] 89.8MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [===================================>--] 92.9MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [====================================>-] 96.0MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [======================================] 99.1MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 [======================================] 99.3MiB / 99.3MiB
+[1A[2K[1A[2K[1A[2K[1A[2KCopying blob 5f6bf015319e skipped: already exists
+Copying blob 45cc8b7f2b43 skipped: already exists
+Copying blob e4ea731ca441 skipped: already exists
+Copying blob da0324832127 done
+Copying config 79b6f8f867 [======================================] 6.2KiB / 6.2KiB
+[1A[2KCopying config 79b6f8f867 done
+Writing manifest to image destination
+Storing signatures
+7893af138886f5304195527db9e70fbe187fe53cdc6664f8d5e764efa528e539
+]777;notify;Command completed;podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io/rhel8/mysql-80:1]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io/rhel8/mysql-80:1]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman run --name mysql-basic -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 -d registry.redhat.io/rhel8/mysql-80:1]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman o[Kps
+CONTAINER ID  IMAGE                                COMMAND     CREATED         STATUS             PORTS  NAMES
+7893af138886  registry.redhat.io/rhel8/mysql-80:1  run-mysqld  11 seconds ago  Up 10 seconds ago         mysql-basic
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps --format ""{"{"}"}"/}}"[1P}}".}}"I}}"D}}"[C[C " "{"{"}"}".}}"N}}"a}}"m}}"e}}"[C[1P"[1P"[K[K[K[K[KImage}} {{.Status}}"
+7893af138886  registry.redhat.io/rhel8/mysql-80:1 Up About a minute ago
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Status}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps --format "{{.ID}}  {{.Image}} {{.Status}}"[1P}}"[1P}}"[1P}}"[1P}}"[1P}}"[1P}}"N}}"a}}"m}}"e}}"
+Error: template: data:1:22: executing "data" at <.Name>: can't evaluate field Name in type shared.PsContainerOutput
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Name}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Name}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Name}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps --format "{{.ID}}  {{.Image}} {{.Name}}"s}}"
+7893af138886  registry.redhat.io/rhel8/mysql-80:1 mysql-basic
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Names}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Names}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps --format "{{.ID}}  {{.Image}} {{.Names}}"]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman exec -it mysql-basic /bin.[K/bash
+bash-4.4$ mysql -uuser1     root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.21 Source distribution
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| items              |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use items
+Database changed
+mysql> CREATE TABLE projects[Pr[1@Pr[29G I[K(int i[K[K[K[Kid int NIT[K[KOT NULL,
+    -> name varchar(255) DEFAULT NULL,
+    -> code var[K[K[Kvarchar(255) DEFAULT NULL,
+    -> PRIMARY KEY (id));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> show tables;
++-----------------+
+| Tables_in_items |
++-----------------+
+| Projects        |
++-----------------+
+1 row in set (0.01 sec)
+
+mysql> insert into Projects (id, name, code) values (1, 'Ajay', 'CD001');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from p[KPo[Krojects;
++----+------+-------+
+| id | name | code  |
++----+------+-------+
+|  1 | Ajay | CD001 |
++----+------+-------+
+1 row in set (0.00 sec)
+
+mysql> exit
+Bye
+bash-4.4$ exit
+exit
+]777;notify;Command completed;podman exec -it mysql-basic /bin/bash]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-create finish
+
+Completing the Guided Exercise: Creating a MySQL database instance
+
+ · Removing "mysql-basic" container............................  [1;36mSUCCESS[0;39m
+ · Removing "rhscl/mysql-57-rhel7:5.7-3.14" image..............  [1;36mSUCCESS[0;39m
+]777;notify;Command completed;lab container-create finish]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ clear
+[3J[H[2J]777;notify;Command completed;clear]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/mysql-80     1        79b6f8f867fc   4 weeks ago    610 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps 
+CONTAINER ID  IMAGE                                COMMAND     CREATED        STATUS            PORTS  NAMES
+7893af138886  registry.redhat.io/rhel8/mysql-80:1  run-mysqld  6 minutes ago  Up 6 minutes ago         mysql-basic
+]777;notify;Command completed;podman ps ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman ps ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container [K-rootless start
+Error: unknown problem specified and not found, container-rootless
+]777;notify;Command completed;lab container-rootless start]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container [K-review start
+
+Setting up workstation for the Lab: Creating Containerized Services
+
+ · Checking podman configuration...............................  [1;36mSUCCESS[0;39m
+ · Setting up labs folder......................................  [1;36mSUCCESS[0;39m
+ · Downloading starter project.................................  [1;36mSUCCESS[0;39m
+ · Downloading solution project................................  [1;36mSUCCESS[0;39m
+
+Setup successful. Please proceed with the exercise.
+
+]777;notify;Command completed;lab container-review start]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -p 8080:80 \
+> --name httpd-basic \
+> quay.io/redhattraining/httpd-parent:2.4
+Trying to pull quay.io/redhattraining/httpd-parent:2.4...
+Getting image source signatures
+Copying blob a3ed95caeb02 .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob 6a5240d60dc4 .                                        
+Copying blob a3ed95caeb02 .                                        
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 ..                                       
+Copying blob 6a5240d60dc4 ..                                       
+Copying blob a3ed95caeb02 ..                                       
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob 08b8c9fdec44 .                                        
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 ..                                       
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 ...                                      
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a .                                        
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob a3ed95caeb02 done
+Copying blob 787f47dbeaac done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob 408208567b9a done
+Writing manifest to image destination
+Storing signatures
+d8a905be23d3d8a7e7a809b86aff57df5e22af54684e6fdf7c4340ef4da86680
+]777;notify;Command completed;podman run -d -p 8080:80 --name httpd-basic quay.io/redhattraining/httpd-parent:2.4]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ curl http://localhost:8080
+Hello from the httpd-parent container!
+]777;notify;Command completed;curl http://localhost:8080]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman exec -it https[Kd-basic /bash/bo[Kin
+Error: exec failed: container_linux.go:349: starting container process caused "exec: \"/bash/bin\": stat /bash/bin: no such file or directory": OCI runtime command not found error
+]777;notify;Command completed;podman exec -it httpd-basic /bash/bin]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                    COMMAND               CREATED         STATUS             PORTS                 NAMES
+d8a905be23d3  quay.io/redhattraining/httpd-parent:2.4  /bin/sh -c /usr/s...  7 minutes ago   Up 7 minutes ago   0.0.0.0:8080->80/tcp  httpd-basic
+7893af138886  registry.redhat.io/rhel8/mysql-80:1      run-mysqld            18 minutes ago  Up 18 minutes ago                        mysql-basic
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman exec -it hr[Kttpd-basic /bin/sh
+sh-4.4# exit
+exit
+]777;notify;Command completed;podman exec -it httpd-basic /bin/sh]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman exec -it httpd-basic /bin/nash[K[K[K[Kbash
+bash-4.4# ls
+bin   dev  home  lib64	     media  opt   root	sbin  sys  usr
+boot  etc  lib	 lost+found  mnt    proc  run	srv   tmp  var
+bash-4.4# cd /var/www/html/
+bash-4.4# ls
+index.html
+bash-4.4# echo "Hr ellow Wo     World" >.   > index.html [1P
+bash-4.4# cat index.html 
+Hello World
+bash-4.4# exit
+exit
+]777;notify;Command completed;podman exec -it httpd-basic /bin/bash]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ curl http://localhost:8080
+Hello World
+]777;notify;Command completed;curl http://localhost:8080]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-review grade
+
+Grading the student's work for the Lab: Creating Containerized Services
+
+ · The httpd container image was pulled........................  [1;31mFAIL[0;39m
+ · The container was started with the correct name.............  [1;31mFAIL[0;39m
+ · The container was started with the correct image............  [1;31mFAIL[0;39m
+ · Check the content of index.html.............................  [1;32mPASS[0;39m
+
+]777;notify;Command completed;lab container-review grade]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-review finish
+
+Completing the Lab: Creating Containerized Services
+
+ · Removing "httpd-basic" container............................  [1;36mSUCCESS[0;39m
+ · Removing "redhattraining/httpd-parent:2.4" image............  [1;36mSUCCESS[0;39m
+]777;notify;Command completed;lab container-review finish]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container [K-review start[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpodman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/mysql-80     1        79b6f8f867fc   4 weeks ago    610 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+quay.io/redhattraining/httpd-parent   2.4      3639ce1374d3   2 years ago    236 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE                                    COMMAND               CREATED         STATUS             PORTS                 NAMES
+d8a905be23d3  quay.io/redhattraining/httpd-parent:2.4  /bin/sh -c /usr/s...  11 minutes ago  Up 11 minutes ago  0.0.0.0:8080->80/tcp  httpd-basic
+7893af138886  registry.redhat.io/rhel8/mysql-80:1      run-mysqld            22 minutes ago  Up 22 minutes ago                        mysql-basic
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman stop https[Kd [K-basic
+d8a905be23d3d8a7e7a809b86aff57df5e22af54684e6fdf7c4340ef4da86680
+]777;notify;Command completed;podman stop httpd-basic]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman rm https[Kd-basic
+d8a905be23d3d8a7e7a809b86aff57df5e22af54684e6fdf7c4340ef4da86680
+]777;notify;Command completed;podman rm httpd-basic]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman rmi ^C
+]777;notify;Command completed;podman rm httpd-basic]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman rm httpd-basic[K[K[K[K[K[K[K[K[K[K[K[Ki 3639ce1374d3
+Untagged: quay.io/redhattraining/httpd-parent:2.4
+Deleted: 3639ce1374d3611e80ed66decd7d5467b72d010c21e19e4f193cd8b944e8c9f5
+]777;notify;Command completed;podman rmi 3639ce1374d3]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman [K[K[K[K[K[K[K
+]777;notify;Command completed;podman rmi 3639ce1374d3]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ 
+]777;notify;Command completed;podman rmi 3639ce1374d3]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman container-review start
+Error: unrecognized command `podman container-review`
+Try 'podman --help' for more information.
+]777;notify;Command completed;podman container-review start]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container [K0[K-review start
+
+Setting up workstation for the Lab: Creating Containerized Services
+
+ · Checking podman configuration...............................  [1;36mSUCCESS[0;39m
+Exercise is already setup.
+]777;notify;Command completed;lab container-review start]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -p 8080:80 --name httpd-basic \
+> quay.io/redhattraining/g[Khttp-parent:2.4
+Trying to pull quay.io/redhattraining/http-parent:2.4...
+  unauthorized: access to the requested resource is not authorized
+Error: unable to pull quay.io/redhattraining/http-parent:2.4: unable to pull image: Error initializing source docker://quay.io/redhattraining/http-parent:2.4: Error reading manifest 2.4 in quay.io/redhattraining/http-parent: unauthorized: access to the requested resource is not authorized
+]777;notify;Command completed;podman run -d -p 8080:80 --name httpd-basic quay.io/redhattraining/http-parent:2.4]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-review g[Kgi[K[Kfinish
+
+Completing the Lab: Creating Containerized Services
+
+ · Removing "httpd-basic" container............................  [1;36mSUCCESS[0;39m
+ · Removing "redhattraining/httpd-parent:2.4" image............  [1;36mSUCCESS[0;39m
+]777;notify;Command completed;lab container-review finish]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-review[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpodman login qua[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpodman [K[K[K[K[K[K[Kls
+[0m[38;5;33mDesktop[0m  [38;5;33mDO180-apps[0m  [38;5;33mDownloads[0m  output.txt  [38;5;33mPublic[0m     typescript
+[38;5;33mDO180[0m    [38;5;33mDocuments[0m   [38;5;33mMusic[0m      [38;5;33mPictures[0m    [38;5;33mTemplates[0m  [38;5;33mVideos[0m
+]777;notify;Command completed;ls]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/mysql-80     1        79b6f8f867fc   4 weeks ago    610 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman status
+Error: unrecognized command `podman status`
+Try 'podman --help' for more information.
+]777;notify;Command completed;podman status]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman login quay.io
+Username: hukum_jain
+Password: 
+Login Succeeded!
+]777;notify;Command completed;podman login quay.io]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ pod[K[K[Klab container-review start
+
+Setting up workstation for the Lab: Creating Containerized Services
+
+ · Checking podman configuration...............................  [1;36mSUCCESS[0;39m
+Exercise is already setup.
+]777;notify;Command completed;lab container-review start]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman run -d -p 8080:80 --name httpd-basic \
+> quay.io/reg[Kdhattraining/httpd-parent:2.4
+Trying to pull quay.io/redhattraining/httpd-parent:2.4...
+Getting image source signatures
+Copying blob a3ed95caeb02 .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob 6a5240d60dc4 .                                        
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob a3ed95caeb02 .                                        
+Copying blob 08b8c9fdec44 .                                        
+Copying blob a3ed95caeb02 .                                        
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a .                                        
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ....                                     
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac                                          
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac .                                        
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ..                                       
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac ...                                      
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2KCopying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob a3ed95caeb02 done
+Copying blob 6a5240d60dc4 done
+Copying blob 787f47dbeaac done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 08b8c9fdec44 done
+Copying blob a3ed95caeb02 skipped: already exists
+Copying blob 408208567b9a done
+Writing manifest to image destination
+Storing signatures
+d994fa9315691a9accddda36487c9c7c827d62a27234de41d0d9e414ee8798be
+]777;notify;Command completed;podman run -d -p 8080:80 --name httpd-basic quay.io/redhattraining/httpd-parent:2.4]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ curl http://localhost:8080
+Hello from the httpd-parent container!
+]777;notify;Command completed;curl http://localhost:8080]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman image[K[K[K[Kps[K[K[Kps
+CONTAINER ID  IMAGE                                    COMMAND               CREATED         STATUS             PORTS                 NAMES
+d994fa931569  quay.io/redhattraining/httpd-parent:2.4  /bin/sh -c /usr/s...  31 seconds ago  Up 30 seconds ago  0.0.0.0:8080->80/tcp  httpd-basic
+7893af138886  registry.redhat.io/rhel8/mysql-80:1      run-mysqld            40 minutes ago  Up 40 minutes ago                        mysql-basic
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman exexc[K[Kc -it httpd-basic /bin/bash
+bash-4.4# ls
+bin   dev  home  lib64	     media  opt   root	sbin  sys  usr
+boot  etc  lib	 lost+found  mnt    proc  run	srv   tmp  var
+bash-4.4# cd var/www/html/
+bash-4.4# ls
+index.html
+bash-4.4# echo "Hello World" > index.html 
+bash-4.4# exit
+exit
+]777;notify;Command completed;podman exec -it httpd-basic /bin/bash]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ curl http://localhost:8080
+Hello World
+]777;notify;Command completed;curl http://localhost:8080]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab container-review grade
+
+Grading the student's work for the Lab: Creating Containerized Services
+
+ · The httpd container image was pulled........................  [1;31mFAIL[0;39m
+ · The container was started with the correct name.............  [1;31mFAIL[0;39m
+ · The container was started with the correct image............  [1;31mFAIL[0;39m
+ · Check the content of index.html.............................  [1;32mPASS[0;39m
+
+]777;notify;Command completed;lab container-review grade]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ lab-container [C[C[1P[1@ [C[1@c[1P[C[C[C[C[C[C[C[C[C[C-review [1P[C[C[C[C[C[C[C[C f i n i d [1P s h 
+
+Completing the Lab: Creating Containerized Services
+
+ · Removing "httpd-basic" container............................  [1;36mSUCCESS[0;39m
+ · Removing "redhattraining/httpd-parent:2.4" image............  [1;36mSUCCESS[0;39m
+]777;notify;Command completed;lab container-review finish ]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman i a[K[Kmages
+REPOSITORY                            TAG      IMAGE ID       CREATED        SIZE
+registry.access.redhat.com/rhel       latest   538460c14d75   10 days ago    216 MB
+registry.redhat.io/rhel8/mysql-80     1        79b6f8f867fc   4 weeks ago    610 MB
+registry.redhat.io/rhel8/httpd-24     latest   e41fcc5f3bd5   4 weeks ago    462 MB
+registry.access.redhat.com/ubi8/ubi   8.3      613e5da7a934   3 months ago   213 MB
+quay.io/redhattraining/httpd-parent   2.4      3639ce1374d3   2 years ago    236 MB
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman rm [Ki -a
+Untagged: registry.access.redhat.com/rhel:latest
+Deleted: 538460c14d75dee1504e56ad8ddb7fe039093b1530ef8f90442a454b9aa3dc8b
+could not remove image 613e5da7a934e1963e37ed935917e8be6b8dfd90cac73a724ddc224fbf16da20 as it is being used by 7 containers
+could not remove image e41fcc5f3bd5eaf2873ebf3ccc6b03f58525cb1e1eadad2166390f99c0dfec1f as it is being used by 1 containers
+could not remove image 79b6f8f867fc616fa5f3e252a4a264c38f85b11add76d9906530f58652cd05d2 as it is being used by 1 containers
+could not remove image 3639ce1374d3611e80ed66decd7d5467b72d010c21e19e4f193cd8b944e8c9f5 as it is being used by 1 containers
+could not remove image 613e5da7a934e1963e37ed935917e8be6b8dfd90cac73a724ddc224fbf16da20 as it is being used by 7 containers
+could not remove image e41fcc5f3bd5eaf2873ebf3ccc6b03f58525cb1e1eadad2166390f99c0dfec1f as it is being used by 1 containers
+could not remove image 79b6f8f867fc616fa5f3e252a4a264c38f85b11add76d9906530f58652cd05d2 as it is being used by 1 containers
+Error: unable to delete all images; re-run the rmi command again.
+]777;notify;Command completed;podman rmi -a]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman rmi -a -f
+Untagged: registry.access.redhat.com/ubi8/ubi:8.3
+Deleted: 613e5da7a934e1963e37ed935917e8be6b8dfd90cac73a724ddc224fbf16da20
+Untagged: registry.redhat.io/rhel8/httpd-24:latest
+Deleted: e41fcc5f3bd5eaf2873ebf3ccc6b03f58525cb1e1eadad2166390f99c0dfec1f
+Untagged: registry.redhat.io/rhel8/mysql-80:1
+Deleted: 79b6f8f867fc616fa5f3e252a4a264c38f85b11add76d9906530f58652cd05d2
+Untagged: quay.io/redhattraining/httpd-parent:2.4
+Deleted: 3639ce1374d3611e80ed66decd7d5467b72d010c21e19e4f193cd8b944e8c9f5
+]777;notify;Command completed;podman rmi -a -f]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY   TAG   IMAGE ID   CREATED   SIZE
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTA
