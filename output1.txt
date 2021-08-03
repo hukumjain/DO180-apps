@@ -1,0 +1,17 @@
+Script started on 2021-07-27 10:24:08-04:00
+]777;notify;Command completed;lab manage-review finish]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman ps
+CONTAINER ID  IMAGE  COMMAND  CREATED  STATUS  PORTS  NAMES
+]777;notify;Command completed;podman ps]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY   TAG   IMAGE ID   CREATED   SIZE
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ podman images
+REPOSITORY   TAG   IMAGE ID   CREATED   SIZE
+]777;notify;Command completed;podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ sudo podman i[Kimages
+REPOSITORY                            TAG      IMAGE ID       CREATED         SIZE
+localhost/do180-custom-httpd          latest   8fc293b447ed   3 minutes ago   236 MB
+quay.io/redhattraining/httpd-parent   latest   4346d3cace25   2 years ago     236 MB
+]777;notify;Command completed;sudo podman images]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ type do180-custom-httpd[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K/usr/local/etc/ocp4.config
+bash: type: /usr/local/etc/ocp4.config: not found
+]777;notify;Command completed;type /usr/local/etc/ocp4.config]0;student@workstation:~]7;file://workstation.lab.example.com/home/student[student@workstation ~]$ exit
+exit
+
+Script done on 2021-07-27 10:49:04-04:00
